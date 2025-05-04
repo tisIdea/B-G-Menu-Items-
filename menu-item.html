@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Item</title>
+    <link rel="stylesheet" href="menu-style.css" />
+  </head>
+  <body>
+    <div class="top-bar">
+      <h1 class="logo">BITE & GO</h1>
+      <div class="tagline">YOU KNOW, YOU DESERVE IT</div>
+    </div>
+
+    <!--PAGE LINKS HERE FOR NAV-->
+    <div class="nav-links">
+      <a href="userinfo.html" onclick="setActive(this)">USER INFORMATION</a>
+      <a href="#" onclick="setActive(this)">ORDERS</a>
+      <a href="menu.html" onclick="setActive(this)">MENU ITEM</a>
+      <a href="#" onclick="setActive(this)">INVENTORY</a>
+    </div>
+
+    <div>
+      <section class="menu-section">
+        <h2 class="menu-title">FOOD</h2>
+        <div id="food-container"></div>
+  
+        <form id="food-form" class="add-form">
+          <input type="text" placeholder="ID" required id="food-id" />
+          <input type="text" placeholder="Name" required id="food-name" />
+          <input type="text" placeholder="Description" required id="food-desc" />
+          <input type="text" placeholder="Price" required id="food-price" />
+          <button type="submit">Add Food</button>
+        </form>
+      </section>
+  
+      <section class="menu-section">
+        <h2 class="menu-title">DRINKS</h2>
+        <div id="drink-container"></div>
+  
+        <form id="drink-form" class="add-form">
+          <input type="text" placeholder="ID" required id="drink-id" />
+          <input type="text" placeholder="Name" required id="drink-name" />
+          <input type="text" placeholder="Description" required id="drink-desc" />
+          <input type="text" placeholder="Price" required id="drink-price" />
+          <button type="submit">Add Drink</button>
+        </form>
+      </section>
+    </div>
+  
+    <script src="menu-item-js.js"></script>
+  </body>
+  </html>
